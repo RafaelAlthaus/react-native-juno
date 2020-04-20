@@ -1,4 +1,4 @@
-[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
+[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT) [![NPM Package](https://img.shields.io/static/v1?label=NPM&message=Package&color=success)](https://www.npmjs.com/package/react-native-juno)
 
 # react-native-juno
 
