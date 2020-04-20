@@ -12,8 +12,10 @@ React Native Bridge for Juno's SDK. For more information, visit the official [An
 
 `$ cd ios && pod install`
 
-Run this on the root of your project to make it compatible with Swift.
+Run this at the root of your project to make it compatible with Swift.
+
 `$ npm install react-native-swift`
+
 `$ react-native swiftify`
 
 Keep in mind that this lib requires at least Swift 4 and Deployment Target 11.0.
