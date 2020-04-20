@@ -7,6 +7,10 @@ React Native Bridge for Juno's SDK. For more information, visit the official [An
 
 `$ npm install react-native-juno --save`
 
+### Extra step for iOS
+
+`$ cd ios && pod install`
+
 ### Extra step for Android
 
 In your `AndroidManifest.xml` add permission for internet and your public token.
