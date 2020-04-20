@@ -1,3 +1,4 @@
+[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 
 # react-native-juno
 
@@ -7,11 +8,17 @@ React Native Bridge for Juno's SDK. For more information, visit the official [An
 
 `$ npm install react-native-juno --save`
 
-### Extra step for iOS
+### Extra steps for iOS
 
 `$ cd ios && pod install`
 
-### Extra step for Android
+Run this on the root of your project to make it compatible with Swift.
+`$ npm install react-native-swift`
+`$ react-native swiftify`
+
+Keep in mind that this lib requires at least Swift 4 and Deployment Target 11.0.
+
+### Extra steps for Android
 
 In your `AndroidManifest.xml` add permission for internet and your public token.
 

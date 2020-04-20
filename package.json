@@ -1,18 +1,29 @@
 
 {
   "name": "react-native-juno",
-  "version": "1.0.12",
+  "version": "1.1.0",
   "description": "React Native Bridge para o SDK de criptografia e validação da Juno.",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
-    "react-native"
+    "react-native",
+    "juno",
+    "react-native-juno"
   ],
-  "author": "Rafael Althaus",
+  "author": {
+    "name": "Rafael Althaus",
+    "email": "rafael.althaus@gmail.com",
+    "url": "https://github.com/RafaelAlthaus"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/RafaelAlthaus/react-native-juno.git"
+  },
   "license": "MIT",
   "peerDependencies": {
-    "react-native": "^0.41.2"
+    "react-native": "^0.41.2",
+    "react-native-swift":"^1.2.3"
   }
 }
