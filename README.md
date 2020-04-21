@@ -82,18 +82,22 @@ Most of the functions detailed on the official documentation were implemented on
 ```javascript
 import RNJuno from 'react-native-juno';
 
-// You need to initialize the SDK before using the card hash method.
-// The first parameter is your public key. This can be null on Android since it's already declared on the Manifest file.
-// The second parameter is whether to run it on production or Sandbox. TRUE for production, FALSE for sandbox.
+/*
+You need to initialize the SDK before using the card hash method.
+The first parameter is your public key. This can be null on Android since it's already declared on the Manifest file.
+The second parameter is whether to run it on production or Sandbox. TRUE for production, FALSE for sandbox.
+*/
 RNJuno.initialize("AC2261A2ECC7FD90D205502092571F5C1C0831935E35073AA95AEBEB68D7E5C5", true);
 
-// This function returns a hash for the credit card informed.
-// The first parameter is the Credit Card Number.
-// The second parameter is the Holders Name.
-// The third parameter is the Security Code.
-// The fourth parameter is the Expiration Month.
-// The fifth parameter is the Expiration Year.
-// The sixth parameter is a callback function, containing the error message as the first parameter (String) and the hash as the second parameter (String).
+/*
+This function returns a hash for the credit card informed.
+The first parameter is the Credit Card Number.
+The second parameter is the Holders Name.
+The third parameter is the Security Code.
+The fourth parameter is the Expiration Month.
+The fifth parameter is the Expiration Year.
+The sixth parameter is a callback function, containing the error message as the first parameter (String) and the hash as the second parameter (String).
+*/
 RNJuno.getCardHash("5362682003164890", "Rafael Althaus", "123", "01", "2025", (error, data) => {
       if (error) {
         console.log("ERROR: " + error);
@@ -102,25 +106,31 @@ RNJuno.getCardHash("5362682003164890", "Rafael Althaus", "123", "01", "2025", (e
       }
 });
 
-// Returns if the card number is valid.
-// The first parameter is the card number.
-// The second parameter is a callback function informing if the number is valid as TRUE of FALSE.
+/*
+Returns if the card number is valid.
+The first parameter is the card number.
+The second parameter is a callback function informing if the number is valid as TRUE of FALSE.
+*/
 RNJuno.isValidCardNumber("5362682003164890", (data) => {
       console.log("VALID CARD NUMBER: " + data);
 });
 
-// Returns if the expire date is valid.
-// The first parameter is the month number.
-// The second parameter is the year number.
-// The third parameter is a callback function informing if the date is valid as TRUE of FALSE.
+/*
+Returns if the expire date is valid.
+The first parameter is the month number.
+The second parameter is the year number.
+The third parameter is a callback function informing if the date is valid as TRUE of FALSE.
+*/
 RNJuno.isValidExpireDate("01", "2025", (data) => {
       console.log("VALID EXPIRE DATE: " + data);
 });
 
-// Returns if the security code is valid.
-// The first parameter is the security code.
-// The second parameter is the card number.
-// The third parameter is a callback function informing if the security code is valid as TRUE of FALSE.
+/*
+Returns if the security code is valid.
+The first parameter is the security code.
+The second parameter is the card number.
+The third parameter is a callback function informing if the security code is valid as TRUE of FALSE.
+*/
 RNJuno.isValidSecurityCode("123", "5362682003164890", (data) => {
       console.log("VALID SECURITY CODE: " + data);
 });
