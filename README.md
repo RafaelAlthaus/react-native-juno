@@ -18,7 +18,7 @@ Run this at the root of your project to make it compatible with Swift.
 
 `$ react-native swiftify`
 
-Keep in mind that this lib requires at least Swift 4 and Deployment Target 11.0.
+Keep in mind that this lib requires at least Swift 4 and Deployment Target 11.0 or greater on your Podfile.
 
 ### Extra steps for Android
 
