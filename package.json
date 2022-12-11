@@ -1,7 +1,6 @@
-
 {
   "name": "react-native-juno",
-  "version": "1.2.0",
+  "version": "1.3.0",
   "description": "React Native Bridge para o SDK de criptografia e validação da Juno.",
   "main": "index.js",
   "scripts": {
@@ -23,7 +22,7 @@
   },
   "license": "MIT",
   "peerDependencies": {
-    "react-native": "^0.41.2",
-    "react-native-swift":"^1.2.3"
+    "react-native": "^0.70.6",
+    "react-native-swift": "^1.2.3"
   }
 }
